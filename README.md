@@ -150,6 +150,50 @@ Documentación oficial del proyecto. Incluye guía de instalación, estructura d
 
 Muestra cómo cada Namespace definido en composer.json apunta exactamente a una carpeta física del proyecto según el estándar PSR-4.
 
+## 🧪 Pruebas de ejecución
+
+### Implementación del estándar PSR-4 en las clases
+
+![Clases con Namespace](images/clases.png)
+
+> Se puede observar que `User.php` declara `namespace App;` y `ProductModel.php` 
+> declara `namespace Database\Model;`. Esto es la base del estándar PSR-4 — 
+> cada clase declara el Namespace que corresponde exactamente a su carpeta física, 
+> permitiendo que Composer las encuentre automáticamente sin necesidad de `require`.
+
+### Codigo de Ejecución - Archivo: prueba.php
+
+```php
+<?php
+
+use App\User;
+use Database\Model\ProductModel;    
+
+require "vendor/autoload.php";
+
+$user = new User();
+echo $user->getname();
+echo "\n";
+
+$product = new ProductModel();
+echo $product->getId();
+
+?>
+```
+### Captura y Resultado de Ejecución
+
+![Prueba de ejecución](images/ejecucion.png)
+
+## 👤 Información del Estudiante
+
+Nombre: Carlos Concepción
+
+Correo: carlos.concepcion2@utp.ac.pa
+
+Curso: Desarrollo de Software VII
+
+Instructor: Irina Fong
+
 
 
 
