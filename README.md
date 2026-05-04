@@ -1,8 +1,8 @@
 # Universidad Tecnológica de Panamá
 
-# Facultad de Ingeniería de Sistemas Computacionales
+## Facultad de Ingeniería de Sistemas Computacionales
 
-# Implementación de Carga Automática (Autoload) bajo el Estándar PSR-4 con Composer
+## Implementación de Carga Automática (Autoload) bajo el Estándar PSR-4 con Composer
 
 ## Fecha de Ejecución:
 3 Mayo, 2026
