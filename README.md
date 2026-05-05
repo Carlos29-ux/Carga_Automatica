@@ -150,6 +150,14 @@ Documentación oficial del proyecto. Incluye guía de instalación, estructura d
 
 Muestra cómo cada Namespace definido en composer.json apunta exactamente a una carpeta física del proyecto según el estándar PSR-4.
 
+## 🗂️ Vista del proyecto en VS Code
+
+![Vista en VS Code](images/vscode.png)
+
+> Estructura real del proyecto visualizada en el explorador de VS Code. 
+> Se puede observar que la carpeta `vendor/` está presente localmente 
+> pero no se sube a GitHub gracias al `.gitignore`.
+
 ## 🧪 Pruebas de Ejecución
 
 ### Implementación del Estándar PSR-4 en las clases
